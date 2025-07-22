@@ -1,0 +1,18 @@
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0D2230;
+  padding: 20px 50px;
+}
+.menu{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+a{
+  font: 400 1.125rem/1.2rem 'Montserrat', sans-serif;
+  text-transform: capitalize;
+  color: #F9F8F7;
+}
