@@ -1,9 +1,11 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Header from './components/home/header/header'
-import Products from './components/home/products/products'
 import Footer from './components/home/footer/footer'
-import Item from './components/common/item/item'
+import Produtos from './components/home/pages/produtos/produtos'
+import PaginaProduto from './components/home/pages/paginaProduto/paginaProduto'
+
+
 
 function App() {
 
@@ -11,13 +13,9 @@ function App() {
     <BrowserRouter>
       <Header/>
       <Routes>
-        <Route path='/' element={<Home/>}/>
-        
-        <Products/>
-      
-        <Item/>
+        <Route path='produtos' element={<Produtos/>}/>
+        <Route path='produto/:slug' element={<PaginaProduto/>} />
       </Routes>
-
       <Footer/>
     </BrowserRouter>
   )

@@ -16,3 +16,6 @@ a{
   text-transform: capitalize;
   color: #F9F8F7;
 }
+.isActive{
+  color: chartreuse;
+}

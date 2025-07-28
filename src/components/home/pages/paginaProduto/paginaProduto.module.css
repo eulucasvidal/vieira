@@ -1,0 +1,7 @@
+.imgWine{
+  max-width: 260px;
+}
+.item{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
