@@ -1,0 +1,15 @@
+.item{
+  display: flex;
+}
+.item > img{
+  max-width: 185px;
+  background-color: #0D2230;
+}
+.itemTitle{
+  font: 600 4.375rem/1.2rem 'Lora', serif;
+  text-transform: uppercase;
+  color: #2E2F2C;
+}
+.itemInfo{
+  background-color: #BFAFAA;
+}

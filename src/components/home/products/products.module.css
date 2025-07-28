@@ -1,17 +1,28 @@
 section{
   background-color: #0D2230;
-  padding:60px 0px;
 }
-.item{
+
+section ul{
+  display: flex;
+  align-items: baseline;
+  gap: 70px;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x: auto;
+  padding-bottom: 20px;
+}
+.item a{
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
   text-transform: uppercase;
   color: #F9F8F7;
+  flex: 1;
 }
 .item img{
-  max-width: 155px;
+  max-width: 185px;
 }
 .item div{
   display: flex;
@@ -25,7 +36,7 @@ section{
 }
 .wineName{
   font: 700 1.25rem/1.2rem 'Montserrat', sans-serif;
-  max-width: 25ch;
+  width: 25ch;
 }
 .wineGrape{
   font: 500 0.875rem/1.2rem 'Montserrat', sans-serif;

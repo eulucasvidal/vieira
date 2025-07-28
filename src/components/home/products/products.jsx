@@ -1,5 +1,5 @@
 import React from "react";
-import styles from './itens.module.css';
+import styles from './products.module.css';
 import WineUm from '../../../assets/img/products/wine-01.png';
 import WineDois from '../../../assets/img/products/wine-02.png';
 import WineTres from '../../../assets/img/products/wine-03.png';
@@ -7,14 +7,15 @@ import WineQuatro from '../../../assets/img/products/wine-04.png';
 import WineCinco from '../../../assets/img/products/wine-05.png';
 import WineSeis from '../../../assets/img/products/wine-06.png';
 
-const Itens = () =>{
+const Products = () =>{
 
   const Wines = [
     {
       img:WineUm,
       brand:'tenuta regaleali',
       nameWine:'riserva di sclafani',
-      grape:'doc contea di sclafani'
+      grape:'doc contea di sclafani',
+      link:'#item',
     },
     {
       img:WineDois,
@@ -49,17 +50,21 @@ const Itens = () =>{
   ]
 
   return <section>
-    {Wines.map((wine, index)=>(
-      <div key={index} className={styles.item}>
+    <ul>
+      {Wines.map((wine, index)=>(
+      <li key={index} className={styles.item}>
+        <a href="#item">
           <img src={wine.img} alt="Imagem da garrafa de vinho" />
           <div>
             <span className={styles.wineBrand}>{wine.brand}</span>
             <h1 className={styles.wineName}>{wine.nameWine}</h1>
             <span className={styles.wineGrape}>{wine.grape}</span>
           </div>
-      </div>
-    ))}
+        </a>
+      </li>
+      ))}
+  </ul>
   </section>
 
 }
-export default Itens;
+export default Products;
