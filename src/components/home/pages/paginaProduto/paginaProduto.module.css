@@ -1,7 +1,48 @@
+.sectionItem{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right,#0D2230 50%, #BFAFAA 50%);
+}
 .imgWine{
-  max-width: 260px;
+  max-width: 200px;
 }
 .item{
   display: grid;
   grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+.info{
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  gap: 40px;
+}
+.titulo{
+  font: 600 4.375rem/4rem 'Lora', serif;
+  text-transform: uppercase;
+  color: #2E2F2C;
+}
+.subtitulo{
+  font: 600 3rem/3rem 'Lora', serif;
+  text-transform: uppercase;
+  color: #2E2F2C;
+}
+.paragrafo{
+  font: 400 0.875rem/1.2rem 'Montserrat', sans-serif;
+  max-width: 55ch;
+}
+.preco{
+  font: 600 2.125rem/2rem 'Lora', serif;
+  color: #0D2230;
+  text-transform: uppercase;
+}
+.buttonDiv{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #FFFFFF;
+  width: 530px;
+  height: 120px;
+  border-radius: 5px;
 }

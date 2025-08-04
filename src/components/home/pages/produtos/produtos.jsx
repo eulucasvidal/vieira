@@ -14,9 +14,9 @@ const Produtos = () =>{
     {
       img:WineUm,
       brand:'tenuta regaleali',
-      nameWine:'riserva di sclafani',
+      nameWine:'rosso del conte',
       grape:'doc contea di sclafani',
-      slug:'riserva-di-sclafani',
+      slug:'rosso-del-conte',
     },
     {
       img:WineDois,
